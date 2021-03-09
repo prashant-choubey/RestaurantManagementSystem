@@ -7,3 +7,4 @@ build the system this is to provide ordering and reservation service by online t
 ordering and reservation management will become easier and systematic to replace traditional system where are still using paper. To resister a meal online, the customer 
 has to become a member first then he can access the later part of the site. The option of becoming member was only an attempt to avoid (to some extent) placing the fake 
 bookings.
+in this module
