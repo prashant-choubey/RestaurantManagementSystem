@@ -9,13 +9,13 @@ const APP_PATH = `${FRONTEND}/apps/${APP_NAME}`;
 
 export const APP_CONSTANTS = {
     FRONTEND, BACKEND, APP_PATH, APP_NAME,
-    MESSAGE_HTML: APP_PATH + "/message.html",
-    RANDOM_HTML: APP_PATH + "/random.html",
+    INDEX_HTML: APP_PATH + "/index.html",
+    //RANDOM_HTML: APP_PATH + "/random.html",
 
     SESSION_NOTE_ID: "com_monkshu_ts",
 
-    API_MESSAGE: `${BACKEND}/apis/message`,
-    API_RANDOM: `${BACKEND}/apis/random`,
+    ADD_CUS: `${BACKEND}/apis/addcus`,
+    //API_RANDOM: `${BACKEND}/apis/random`,
 
     USERID: "id",
     USER_ROLE: "user",

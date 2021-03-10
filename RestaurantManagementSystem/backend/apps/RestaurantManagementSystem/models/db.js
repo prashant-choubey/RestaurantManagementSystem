@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("../3p/node_modules/mongoose");
 
 mongoose.connect(
   "mongodb://localhost:27017/CustomerDB",
@@ -12,4 +12,30 @@ mongoose.connect(
   }
 );
 
-require("./customer.model");
+const Customer=require('./customer.model');
+module.exports =Customer;
+Customer.find((err,docs)=>{
+    if(!err) {
+        console.log(docs);
+        
+    }
+    else 
+        console.log("error");
+})
+
+const cus=new Customer();
+cus.username="Prashant Choubey";
+cus.password="helloworld";
+cus.mobile="8130269652";
+cus.email="prashantchoubey174@gmail.com";
+cus.save((err,doc)=>{
+    if(!err){
+      console.log(doc);
+      
+     
+    }
+    else{
+        console.log("error during adding record"+err.message);
+      
+    }
+});
